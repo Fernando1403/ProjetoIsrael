@@ -48,7 +48,50 @@ a:hover{
     justify-content: space-between;
 }
 
+.header-page h1{
+    color: var(--color-light);
+    font-size: 4vmin;
+}
+
 .header-page ul{
     display: flex;
     gap: 30px;
 }
+/**************** FIM HEADER *****************/
+
+/**************** hero *****************/
+
+.hero{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: var(--color-light);
+    text-align: center;
+
+    & h2{
+        font-size: clamp(24px, 4vw, 50px);
+    }
+
+    & p{
+        width: 60%;
+        line-height: 1.6;
+    }
+}
+
+.btn{
+    border: 3px solid var(--color-pink);
+    padding: 8px 30px;
+    background-color: var(--color-pink);
+    border-radius: 70px;
+    transition: background-color var(--transition);
+
+    &:hover{
+        background-color: transparent;
+    }
+}
+
+/**************** FIM HERO************/
